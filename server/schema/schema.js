@@ -1,9 +1,15 @@
 //describes objects, relations,queries,mutateions and all
 const graphql = require('graphql');
-const _=require('lodash');
 
- const {GraphQLObjectType,GraphQLString,GraphQLSchema,GraphQLID,GraphQLInt ,GraphQLList , GraphQLNonNull} = graphql;
-const WibesAppUsersModel = require('../models/wibesAppUsers');
+ const {GraphQLObjectType,
+   GraphQLString,
+   GraphQLSchema,
+   GraphQLID,
+   GraphQLInt ,
+   GraphQLList ,
+    GraphQLNonNull,
+  GraphQLInputObjectType} = graphql;
+const User = require('../models/wibesAppUsers');
 
 const wibesAppUsersType = new GraphQLObjectType({
    name:'wibesAppUsers', //like table name
@@ -27,7 +33,7 @@ const wibesAppUsersType = new GraphQLObjectType({
       userEnquiry:{
         type:new GraphQLList(wibesAppUsersType),
         resolve(parents,args){
-         return WibesAppUsers.find({});
+         return User.find({});
         }
       }
     }
@@ -48,10 +54,10 @@ const wibesAppUsersType = new GraphQLObjectType({
          reputation:{type:new GraphQLNonNull(GraphQLString)},
          portal_name:{type:new GraphQLNonNull(GraphQLString)},
          wibe_wallet:{type:new GraphQLNonNull(GraphQLString)},
-         block:{type:new GraphQLNonNull(GraphQLString)
+         block:{type:new GraphQLNonNull(GraphQLString)}
        },
        resolve(_,args){
-         let user = new WibesAppUsersModel({
+         let user = new User({
            human_name:args.human_name,
            pass_code:args.pass_code,
            backup_code:args.backup_code,
@@ -61,15 +67,14 @@ const wibesAppUsersType = new GraphQLObjectType({
            portal_name:args.portal_name,
            wibe_wallet:args.wibe_wallet,
            block:args.block
-         }); //Author is the collection imported from models
+         });
          return user.save();
        }
      }
    }
- }
  })
 
  module.exports = new GraphQLSchema({
       query:RootQuery,
-       mutation:Mutation
+      mutation:Mutation
  });
