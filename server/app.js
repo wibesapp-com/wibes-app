@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors());
 
-mongoose.connect('mongodb://teja:test123@ds151892.mlab.com:51892/gql-ninja');
+mongoose.connect('mongodb://teja:test123@ds151892.mlab.com:51892/gql-ninja', { useNewUrlParser: true } );
 mongoose.connection.once('open',() => {
   console.log('connected to database');
 })

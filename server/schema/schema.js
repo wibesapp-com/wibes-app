@@ -42,11 +42,16 @@ const signWibesType = new GraphQLObjectType({
   name:'signWibes', //like table name
   fields:() => ({  //like column names
     human_name:{type:GraphQLString},
-    pass_code:{type:GraphQLString},
-    token:{type:GraphQLString}
-    })
+    pass_code:{type:GraphQLString}
+  })
 });
 
+const token = new GraphQLObjectType({
+  name:'token',
+  fields:() => ({
+    Token:{type:GraphQLString}
+  })
+})
 
 const RootQuery = new GraphQLObjectType({
   name:'RootQueryType',
@@ -67,15 +72,9 @@ const Mutation = new GraphQLObjectType({
    addWibesAppUser:{
      type:wibesAppUsersType,
      args:{
-       human_name:{type:new GraphQLNonNull(GraphQLString)},
-       pass_code:{type:new GraphQLNonNull(GraphQLString)},
-       backup_code:{type:new GraphQLNonNull(GraphQLString)},
-       personal_key:{type:new GraphQLNonNull(GraphQLString)},
-       reverb_coins:{type:new GraphQLNonNull(GraphQLString)},
-       reputation:{type:new GraphQLNonNull(GraphQLString)},
-       portal_name:{type:new GraphQLNonNull(GraphQLString)},
-       wibe_wallet:{type:new GraphQLNonNull(GraphQLString)},
-       block:{type:new GraphQLNonNull(GraphQLString)}
+       human_name:{type:new GraphQLNonNull(GraphQLString)}, pass_code:{type:new GraphQLNonNull(GraphQLString)}, backup_code:{type:new GraphQLNonNull(GraphQLString)},
+       personal_key:{type:new GraphQLNonNull(GraphQLString)},reverb_coins:{type:new GraphQLNonNull(GraphQLString)},reputation:{type:new GraphQLNonNull(GraphQLString)},
+       portal_name:{type:new GraphQLNonNull(GraphQLString)},wibe_wallet:{type:new GraphQLNonNull(GraphQLString)}, block:{type:new GraphQLNonNull(GraphQLString)}
      },
      resolve(_,args){
        let user = new User({
@@ -94,31 +93,25 @@ const Mutation = new GraphQLObjectType({
    },
 
    signinUser:{
-     type:signWibesType,
+     type:token,
      args:{
            human_name:{type:new GraphQLNonNull(GraphQLString)},
            pass_code:{type:new GraphQLNonNull(GraphQLString)}
        },
        resolve(_,args){
         const  name = args.human_name;
-
         const  user = User.findOne({human_name:name});
-
             if(!user){
-                // throw new Error('User Not Found');
-                return msg="not user"
+                throw new Error('User Not Found');
             }
             const isValidPassword =  bcrypt.compare(args.pass_code, user.pass_code);
-
               if(!isValidPassword){
-                  // throw new Error('inValid password');
-                  return msg ="not valid pass"
+                  throw new Error('inValid password');
+                  // return msg ="not valid pass"
               }
               const pass_code = user.pass_code;
-        // return user;
-        // token = jwt.sign({name,pass_code}, "teja", "1hr")
-        token = "this is toen"
-        return user
+        const temp =  createToken(user, "teja", "1hr")
+        return {Token:temp}
        }
    }
  }

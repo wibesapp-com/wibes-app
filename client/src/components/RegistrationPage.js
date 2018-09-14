@@ -10,6 +10,7 @@ class RegistrationPage extends Component {
       portal_name:'',
       pass_code:''
     };
+
   }
 
   submitForm(e){
