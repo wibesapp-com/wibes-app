@@ -7,16 +7,14 @@
 		padding
 	}
 
-
-
 	#header > img
 	{
 		padding-bottom: 0.5rem;
 		padding-top: 0.5rem;
 		padding-left: 1.5rem;
-		padding-right: 1rem;
-		
+		padding-right: 1rem;	
 	}
+
 	.hamburger
 	{
 		visibility: hidden;
@@ -32,7 +30,6 @@
 		width: 600px;
 		margin:9rem 0 0 5rem;
 		padding-bottom: 0;
-
 	}
 
 	.head-d-button
@@ -40,7 +37,6 @@
 		font-size: 1rem;
 		margin:0 1.5rem;
 	}
-	
 
 	nav
 	{
@@ -48,25 +44,21 @@
 		display: inline-block;
 		float: right;
 		margin-right: 1.5rem;
-
 	}
 
-
-
-
-	nav>ul>li
+	nav > ul > li
 	{
 		display: inline-block;
 		padding:1rem 1.5rem;
 	}
 
-	nav>ul>li:nth-child(5)
+	nav > ul > li:nth-child(5)
 	{
 		padding:0.5rem 1.5rem;
 		
 	}
 
-	#page-content > p
+	/*#page-content > p
 	{	
 		padding: 0;
 		font-size: 2.25rem;
@@ -89,6 +81,6 @@
 	#family-intro-text > h3
 	{
 		font-size: 1.5rem;
-	}
+	}*/
 
 }

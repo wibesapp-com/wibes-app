@@ -1,10 +1,14 @@
-body
+	body
 	{
 		font-family: 'Roboto', sans-serif;
 	    margin: 0;       
 	    background-color: #f2f2f2;
 	}
 
+	.border
+	{
+		border:1px solid grey;
+	}
 	/**
 	{
     	box-sizing: border-box;
@@ -20,26 +24,90 @@ body
 		font-family: 'raleway', sans-serif;
 	}
 
+	.brand-bg
+	{
+		background-image: linear-gradient(#24B7FB,#10DC5F);
+	}
+
+	.w-txt
+	{
+		color:#fff;
+	}
+
+	.br-txt
+	{
+		color:#654321;
+	}
+
+	.no-mar
+	{
+		margin:0;
+	}
+
+	.sides-pad
+	{
+		padding:0rem 1rem;
+	}
+
+	.top-pad
+	{
+		padding:1rem 0rem;
+	}
+
+	.button-dark
+	{
+		color: #ffffff;
+		text-align: center;
+		background-color: #1B1B21;
+		font-size: 1.25rem;
+		font-weight: 500;
+		border-radius: 0.75rem;
+		padding: 1rem 3rem;
+		border: 2px solid white;
+		/*width: 70%;*/
+	}
 
 	.article-container-mob
 	{
 		display: flex;
 		flex-direction: column;
+		width:100%;
+		margin:0;
 		text-align: center;
+		align-items: center;
+		padding:1.5rem 0;
+	}
+
+	h3.article-title
+	{
+		font-family: 'raleway', sans-serif;
+		/*font-size: 1.25rem;*/
+		font-weight: 700;
+		
+		padding:1rem;		
+	}
+
+
+	.changing-content
+	{
+		font-family: 'open-sans', sans-serif;
 		padding:1rem;
-
+		font-weight: 300;
+		font-size: 1rem;
 	}
 
-
-
-	#intro-view
-	{	
-		width: 100%;
-		top: 0;
-		margin: 0;
-		left: 0;
-		background-image: linear-gradient(#24B7FB,#10DC5F);
+	#article-page> h3 
+	{
+		
+		font-weight:400;
 	}
+	
+
+	.mock-up
+	{
+	   width:100vw;
+	}
+
 
 	#header
 	{
@@ -60,7 +128,7 @@ body
 		float: left;
 	}
 
-	h3
+	#header > h3
 	{
 		color: #ffffff;
 		
@@ -100,46 +168,18 @@ body
 
 	#page-content
 	{
-		display: flex;
-		flex-direction: column;
-		width:100%;
-		margin: 0;
-		/*align-content: center;*/
+		padding-bottom:3rem;
+	}
+
+	#page-content > img
+	{
+		padding-top: 9rem;
 	}
 
 	
-
-	#page-content > p
+	#tagline
 	{
-		
-		font-size: 1.25rem;
-		padding: 1rem;
-		color: #f2f2f2;
-		text-align: center;
-	
-	}
-
-	#page-content > #d-button
-	{
-		color: #ffffff;
-		text-align: center;
-		background-color: #1B1B21;
-		font-size: 1.25rem;
-		font-weight: 500;
-		
-		border-radius: 0.75rem;
-		padding: 0.5rem 3rem;
-		margin: 2rem auto 3rem;
-		border: 2px solid white;
-		/*width: 70%;*/
-	}
-
-	#family-intro
-	{
-		background-color: #ffffff;
-		display: flex;
-		align-items: center;
-		text-align: center;
+		padding-bottom: 4rem;
 	}
 
 	#family-intro-text
@@ -147,49 +187,116 @@ body
 		display: flex;
 		flex-direction: column;
 	}
-
-	#family-intro-text > h3
-	{
-		
-		/*font-size: 1.25rem;*/
-		font-weight: 700;
-		color: #654321;
-		padding:1rem;
-			
-	}
-
-	#family-intro-text > p
-	{
-		
-		font-weight: 400;
-		font-size: 1.25rem;
-		color: #654321;
-		text-align: center;
-		padding: 1rem;
-		
 	
-	}
-
-	#family-intro-text > #u-button
+	#u-button
 	{
+		display: block;
 		color: #654321;
-		text-align: center;
 		background-color: #ffffff;
 		font-size: 1rem;
 		font-weight: 500;
-		
 		border-radius: 0.5rem;
 		padding: 0.5rem 1rem;
-		margin: 2rem;
 		border: 2px solid #654321;
+		margin:auto auto 2rem auto;	
 	}
 
+	
 	#family-sample
 	{
 		display: flex;
 		flex-direction: row;
+		justify-content: center;	
+		width: 100%;
+		margin: 0 1rem;
+		
+	}
+
+	.family-box
+	{
+		margin: 0 0.5rem;
 	}
 	
+
+
+	.box
+	{
+		border-radius: 0.5rem;
+		width: 6rem;
+		height: 4rem;
+		background-color: grey;
+	}
+
+	.text
+	{
+		font-size: 0.75rem;
+		font-weight: 500;
+		padding-top:0.5rem;
+	
+	}
+
+
+
+
+	#feature-card
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+		margin: 1rem;
+		width:80vw;
+
+	}
+
+	#feature-card > span
+	{
+		font-size: 1rem;
+		font-weight: 600;
+		font-family: 'open-sans', sans-serif;
+		color: #ffffff;
+		text-align: center;
+		padding-bottom: 5px;
+	}
+
+	
+	
+	.footer > #links
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 1rem;
+		font-size: 1rem;
+
+	}
+
+	#media
+	{
+		padding-bottom:2rem;
+	}
+
+	#media > div >img
+	{
+		width:1.5rem;
+		height:auto;
+
+	}
+
+	.d-button
+	{
+		color: #ffffff;
+		text-align: center;
+		background-image: linear-gradient(to right,#10DC5F,#24B7FB);
+		font-size: 1.25rem;
+		font-weight: 600;
+		font-family: 'open-sans', sans-serif;
+		border-radius: 0.75rem;
+		padding: 1rem 3rem;
+		margin-top:1rem;
+		/*border: 2px solid white;*/
+	}
+
 
 .head-d-button
 {
@@ -197,5 +304,6 @@ body
 	padding:0.5rem 1rem;
 	border-radius:6px;
 	display: inline-block;
+
 
 }
