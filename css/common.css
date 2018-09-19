@@ -10,6 +10,28 @@ body
     	box-sizing: border-box;
 	}*/
 
+	.opensans
+	{
+		font-family: 'open-sans', sans-serif;
+	}
+
+	.raleway
+	{
+		font-family: 'raleway', sans-serif;
+	}
+
+
+	.article-container-mob
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding:1rem;
+
+	}
+
+
+
 	#intro-view
 	{	
 		width: 100%;
@@ -41,7 +63,7 @@ body
 	h3
 	{
 		color: #ffffff;
-		font-family: 'raleway', sans-serif;
+		
 		letter-spacing: 1.5px;
 		display: inline-block;
 		padding: 1rem;
@@ -80,6 +102,8 @@ body
 	{
 		display: flex;
 		flex-direction: column;
+		width:100%;
+		margin: 0;
 		/*align-content: center;*/
 	}
 
@@ -87,12 +111,12 @@ body
 
 	#page-content > p
 	{
-		font-family: 'open-sans', sans-serif;
+		
 		font-size: 1.25rem;
 		padding: 1rem;
 		color: #f2f2f2;
 		text-align: center;
-		margin
+	
 	}
 
 	#page-content > #d-button
@@ -102,7 +126,7 @@ body
 		background-color: #1B1B21;
 		font-size: 1.25rem;
 		font-weight: 500;
-		font-family: 'open-sans', sans-serif;
+		
 		border-radius: 0.75rem;
 		padding: 0.5rem 3rem;
 		margin: 2rem auto 3rem;
@@ -113,38 +137,47 @@ body
 	#family-intro
 	{
 		background-color: #ffffff;
-	}
-
-	#family-intro > h3
-	{
-		font-family: 'raleway', sans-serif;
-		/*font-size: 1.25rem;*/
-		/*font-weight: 700;*/
-		color: #654321;
+		display: flex;
+		align-items: center;
 		text-align: center;
-		padding: 1rem;
-		margin: 0 1rem;
 	}
 
-	#family-intro > p
+	#family-intro-text
 	{
-		font-family: 'open-sans', sans-serif;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#family-intro-text > h3
+	{
+		
+		/*font-size: 1.25rem;*/
+		font-weight: 700;
+		color: #654321;
+		padding:1rem;
+			
+	}
+
+	#family-intro-text > p
+	{
+		
 		font-weight: 400;
 		font-size: 1.25rem;
 		color: #654321;
 		text-align: center;
 		padding: 1rem;
-		margin: 1rem;
+		
+	
 	}
 
-	#family-intro > #u-button
+	#family-intro-text > #u-button
 	{
 		color: #654321;
 		text-align: center;
 		background-color: #ffffff;
 		font-size: 1rem;
 		font-weight: 500;
-		font-family: 'open-sans', sans-serif;
+		
 		border-radius: 0.5rem;
 		padding: 0.5rem 1rem;
 		margin: 2rem;

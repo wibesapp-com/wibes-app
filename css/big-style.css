@@ -1,6 +1,14 @@
 @media only screen and (min-width:1225px)
 {
 
+	.left
+	{
+		padding-left:5rem;
+		padding
+	}
+
+
+
 	#header > img
 	{
 		padding-bottom: 0.5rem;
@@ -73,6 +81,14 @@
 		margin-left: 5rem;
 	}
 	
-	
+	#family-intro-text 
+	{
+		width:50%;
+	}
+
+	#family-intro-text > h3
+	{
+		font-size: 1.5rem;
+	}
 
 }
