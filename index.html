@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html><head>
 	<title>WibesApp</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -9,8 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/big-style.css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i|Raleway:400,600,700,800,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins" 
-	rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -31,7 +28,7 @@
 				</div>
 
 				<nav>
-					<ul id="nav-tabs" class="opensans">
+					<ul id="nav-tabs" class="opensans" style="">
 						<li>about us</li>
 						<li>the need</li>
 						<li>inception</li>
@@ -46,6 +43,8 @@
 						$("#featured-wibes").hide();
 						if($(window).width()<732)
 							$("#nav-tabs").hide();
+						else
+							$("#nav-tabs").show();
 						
 					    $(".hamburger").click(function(){
 					        $("#nav-tabs").slideToggle();
@@ -70,9 +69,9 @@
 
 	<div id="page-content" class="article-container-mob brand-bg">
 		
-		<img class="no-mar sides-pad" src="./images/wibesapp.png" alt="The Frank Media">
-		<p id="tagline" class="raleway sides-pad w-txt">Stop Assuming Start Wibing</p>
-		<div class="button-dark "style="margin-bottom:2rem" >Download Our App</div>
+		<img class="no-mar sides-pad desk-left no-pad" src="./images/wibesapp.png" alt="The Frank Media">
+		<p id="tagline" class=" desk-left w-txt">Stop Assuming Start Wibing</p>
+		<div class="button-dark desk-left " style="margin-bottom:2rem">Download Our App</div>
 
 	</div>
 	
@@ -83,10 +82,10 @@
 
 
 <div id="family-intro" class="article-container-mob">
-	<div id="family-intro-text">
-		<h3 class="article-title no-mar br-txt">WibesApp lets us explore world of Families Around Us!</h3>
-		<p class="changing-content br-txt no-mar">Create or explore local and global families to connect around Your specific interests</p>
-		<div id="u-button" class="opensans" >Understand more</div>
+	<div id="family-intro-text" class="desk-left">
+		<h3 class="article-title no-mar br-txt title-text">WibesApp lets us explore world of Families Around Us!</h3>
+		<p class="changing-content br-txt no-mar subtitle-text">Create or explore local and global families to connect around Your specific interests</p>
+		<div id="u-button" class="opensans desk-left">Understand more</div>
 	</div>
 	<div id="family-sample" >
 		
@@ -96,7 +95,7 @@
 		</div>
 
 		<div class="family-box">
-			<div class ="box"></div>
+			<div class="box"></div>
 			<div class="text opensans">Singers</div>
 		</div>
 
@@ -115,76 +114,84 @@
 
 <div id="family-info" class="article-container-mob">
 	
-	<div class="square-set">
+	<div class="square-set desk-right">
 		
-		
+	 
+
+
 	</div>
+		<div id="app-intro" class="desk-left">
+			<h3 id="punch-line" class="article-title no-mar w-txt title-text">
+				Express your experiences, passions, stories, happiness, sadness, wishes, fantasies and what not?
+			</h3>
 
-	<h3 id="punch-line" class="article-title no-mar w-txt ">
-		Express your experiences, passions, stories, happiness, sadness, wishes, fantasies and what not?
-	</h3>
+			<div class="article changing-content w-txt subtitle-text">
+				Stop Assuming and thinking about what others think about you, coz there is no <b>You</b> and <b>Me</b> here! There is only <b>We</b> and <b>Us</b> in <b>WibesApp</b>.
+			</div>
 
-	<div class="article changing-content w-txt">
-		Stop Assuming and thinking about what others think about you, coz there is no <b>You</b> and <b>Me</b> here! There is only <b>We</b> and <b>Us</b> in <b>WibesApp</b>.
-	</div>
-
-	<div class="article changing-content w-txt">
-		Start Wibing and lets WibesApp tell you and show you How, Where and till When? Humans around you are responding to your Wibes.
-	</div>
-
+			<div class="article changing-content w-txt subtitle-text">
+				Start Wibing and lets WibesApp tell you and show you How, Where and till When? Humans around you are responding to your Wibes.
+			</div>
+		</div>
 </div>
 
 
-					<!-- Article-page -->
+					<!-- wibe-intro -->
 
 
-<div id="article-page" class="article-container-mob">
+<div id="wibe-intro" class="article-container-mob">
 	
-	<h3 class="article-title br-txt sides-pad">
-		Share your Experiences with Humans around you through any type of media. Everything is just a <b>Wibe</b> in our <b>WibesApp</b>.
-	</h3>
 
-	<div class="changing-content br-txt">
-		From Text, Quote, Link, Photo, Instagram, Blogs, Gifs, Audio, Sound cloud, Video, Youtube, to literally everything!! You name it!!!
-	</div>
 
-	<img class="no-mar mock-up" src="./images/iphone.png" alt="Make New Connections" >
+	<div class="desk-left desk-right">
+		<h3 class="article-title br-txt sides-pad title-text" style="font-weight: 300;">
+			Share your Experiences with Humans around you through any type of media. Everything is just a <b>Wibe</b> in our <b>WibesApp</b>.
+		</h3>
 
+		<div class="changing-content br-txt subtitle-text">
+			From Text, Quote, Link, Photo, Instagram, Blogs, Gifs, Audio, Sound cloud, Video, Youtube, to literally everything!! You name it!!!
+		</div>
+</div>
+		<img class="no-mar mock-up" src="./images/iphone.png" alt="Make New Connections">
+	
 </div>
 
 
 					<!-- Keep in-Touch Page -->
 
 
-<div id="in-touch-page" class="article-container-mob w-txt">
-	
-	<img  src="./images/in-touch icon.png" alt="Make New Connections">
+<div id="in-touch-page" class="article-container-mob w-txt " >
+	<div class="desk-right desk-left">
+	<img src="./images/in-touch icon.png" alt="Make New Connections">
 
-	<h3 id="keep-in-touch" class= "article-title sides-pad ">
-		Keep <b>in-touch</b> with the Humans whom you adore, whose wibes you want to keep listening to even when you are not around them.
-	</h3>
-
-	<div id="intouch-text" class="changing-text sides-pad">
+	<div id="intouch-text " class="changing-text sides-pad subtitle-text">
 		They don't know who all are in-touch with them, they just know how many are in touch with them, same goes to you.
 	</div>
 
+
+	<h3 id="keep-in-touch" class="article-title sides-pad title-text">
+		Keep <b>in-touch</b> with the Humans whom you adore, whose wibes you want to keep listening to even when you are not around them.
+	</h3>
+	</div>
+	
 </div>
 
 
 					<!-- Gaming Page -->
 
 
-<div id="gaming-page" class="article-container-mob br-txt">
-	
-	<h3 id="experi-fun" class="article-title ">
-		Experience the <b>fun</b> of gaming in a <b>Response Able</b> network
-	</h3>
+<div id="gaming-page" class="article-container-mob br-txt desk-left desk-right">
+	<div>
+		<h3 id="experi-fun" class="article-title title-text">
+			Experience the <b>fun</b> of gaming in a <b>Response Able</b> network
+		</h3>
 
-	<div id="gaming-text" class="changing-content">
-		Every wibe has its own life-time that changes with the responses people give.You can <b>memorize</b>, <b>forget</b> or even <b>ignore</b> any wibe around them. 
+		<div id="gaming-text" class="changing-content subtitle-text">
+			Every wibe has its own life-time that changes with the responses people give.You can <b>memorize</b>, <b>forget</b> or even <b>ignore</b> any wibe around them. 
+		</div>
 	</div>
 
-	<img class="mock-up" src="./images/iphone.png" alt="Make New Connections" >
+	<img class="mock-up" src="./images/iphone.png" alt="Make New Connections">
 
 </div>
 
@@ -192,13 +199,13 @@
 					<!-- WibesApp Features Page -->
 
 
-<div id="features-page" class="article-container-mob top-pad no-mar" >
-	
-	<h3 class="no-mar">WibesApp Features</h3>
+<div id="features-page" class="article-container-mob top-pad ">
+	<div>
+	<h3 class="no-mar w-txt title-text article-title">WibesApp Features</h3>
 
 	<div id="feature-card" class="sides-pad">
 		
-		<span style="margin-top: 1.5rem">Families</span>
+		<span>Families</span>
 		<span>In-Touch</span>
 		<span>Echoes</span>
 		<span>Response Ability</span>
@@ -211,6 +218,7 @@
 		<span style="margin-bottom: 1.5rem">Local and Global Celebrities</span>
 			
 	</div>
+	</div>
 
 </div>
 
@@ -218,7 +226,7 @@
 					<!-- Featured Wibes -->
 
 
-<div id="featured-wibes">
+<div id="featured-wibes" style="display: none;">
 	
 	<h3>Featured Wibes</h3>
 	<div class="wibe-card"></div>
@@ -235,8 +243,8 @@
 
 <div id="get-app" class="article-container-mob br-txt">
 	
-	<h3 class="article-title no-mar">Get the app now</h3>
-	<p class="changing-content no-mar">Stop Assuming Start Wibing</p>
+	<h3 class="article-title no-mar title-text">Get the app now</h3>
+	<p class="changing-content no-mar subtitle-text">Stop Assuming Start Wibing</p>
 	<div class="d-button">download the app soon</div>
 
 </div>
@@ -245,9 +253,9 @@
 					<!-- Footer-Content -->
 
 
-<div class="footer">
-	
-	<div id="links">
+<div class="footer ">
+	<div>
+	<div id="links"class=" opensans">
 		<div>About</div>
 		<div>Careers</div>
 		<div>Contact</div>
@@ -258,14 +266,14 @@
 		
 	</div>
 
-	<div class="copyright">&copy 2018 WibesApp Solutions Pvt. Ltd</div>
-
+	<center class="copyright" style="color:grey; margin-bottom:2rem">© 2018 WibesApp Solutions Pvt. Ltd</center> 
+	
 </div>
 
 
 
-</body>
 
 
 
-</html>
+
+</body></html>

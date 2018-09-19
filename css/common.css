@@ -26,7 +26,7 @@
 
 	.brand-bg
 	{
-		background-image: linear-gradient(#24B7FB,#10DC5F);
+		background-image: linear-gradient(-150deg,#24B7FB,#10DC5F);
 	}
 
 	.w-txt
@@ -52,6 +52,10 @@
 	.top-pad
 	{
 		padding:1rem 0rem;
+	}
+	.no-pad
+	{
+		padding:0;
 	}
 
 	.button-dark
@@ -96,21 +100,20 @@
 		font-size: 1rem;
 	}
 
-	#article-page> h3 
+	#wibe-intro> h3 
 	{
 		
 		font-weight:400;
 	}
 	
 
-	.mock-up
-	{
-	   width:100vw;
-	}
+	
 
 
 	#header
 	{
+		
+
 		width: 100%;
 		z-index: 3;
 		display: inline-block;
@@ -198,7 +201,7 @@
 		border-radius: 0.5rem;
 		padding: 0.5rem 1rem;
 		border: 2px solid #654321;
-		margin:auto auto 2rem auto;	
+		margin-bottom:2rem;	
 	}
 
 	
@@ -236,7 +239,93 @@
 	}
 
 
+	#family-info
+	{
+		display: flex;
+		
+		background-color: #24B7FB;
+	}
 
+	#app-intro
+	{
+		display: flex;
+
+		flex-direction: column;
+
+
+	}
+
+
+
+	.square-set
+	{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		
+	}
+
+	.square-set > .square
+	{
+		
+		
+		margin: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+	#wibe-intro
+	{
+		display: flex;
+
+	}
+
+	#wibe-intro > div
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+
+	#in-touch-page
+	{
+		background-color: #10DC5F;
+		
+
+	}
+
+	#in-touch-page > img
+	{
+		margin:auto;
+	}
+
+
+
+	#gaming-page
+	{
+		background-color: #ffffff;
+		display: flex;
+
+		
+		
+	}
+
+	#gaming-page > div
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#features-page
+	{
+		background-color: #24B7FB;
+		display: flex;
+		}
 
 	#feature-card
 	{
@@ -261,7 +350,7 @@
 
 	
 	
-	.footer > #links
+	 #links
 	{
 		display: flex;
 		flex-direction: row;
@@ -271,10 +360,19 @@
 
 	}
 
-	#media
+	#links div
 	{
-		padding-bottom:2rem;
+		color: #24B7FB;
 	}
+
+	#media
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		
+			padding-bottom:2rem;
+		}
 
 	#media > div >img
 	{
@@ -296,6 +394,18 @@
 		margin-top:1rem;
 		/*border: 2px solid white;*/
 	}
+
+	#get-app
+	{
+		background-color: #ffffff;
+	}
+
+	
+	.footer
+	{
+		background-color: #f2f2f2;
+	}
+
 
 
 .head-d-button
