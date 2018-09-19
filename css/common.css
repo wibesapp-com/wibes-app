@@ -26,6 +26,7 @@ body
 		display: inline-block;
 		/*flex-direction: row;*/
 		background-color: #654321;
+		position: fixed;
 		/*justify-content: space-around;*/
 	}
 
@@ -160,8 +161,8 @@ body
 .head-d-button
 {
 	background-image: linear-gradient(to right,#10DC5F,#24B7FB);
-	padding:0.5rem;
+	padding:0.5rem 1rem;
 	border-radius:6px;
 	display: inline-block;
-	
+
 }
