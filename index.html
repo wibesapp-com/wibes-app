@@ -4,7 +4,9 @@
 	<title>WibesApp</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/wibesapp.css">
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<link rel="stylesheet" type="text/css" href="./css/wibesapp.css">
+	<link rel="stylesheet" type="text/css" href="./css/big-style.css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
@@ -17,10 +19,7 @@
 
 					<!-- Header & Intro -->
 
-
-<div id="intro-view">
-
-	<div id="header">
+<div id="header">
 		
 		<img src="./images/wibesapp-logo.png" alt="WibesApp">
 		<h3>WibesApp</h3>
@@ -30,7 +29,34 @@
 			<span style="margin-bottom: 0"></span>
 		</div>
 
+		<nav>
+			<ul id="nav-tabs">
+				<li>about us</li>
+				<li>the need</li>
+				<li>inception</li>
+				<li>featured wibes</li>
+				<li> <div class="head-d-button">download </div></li>
+			</ul>	
+		</nav>
+
+		<script>
+			$(document).ready(function(){
+				$("#nav-tabs").hide();
+				$("#featured-wibes").hide();
+			    $(".hamburger").click(function(){
+			        $("#nav-tabs").slideToggle();
+			    });
+			});
+</script>
+
 	</div>
+
+
+
+
+
+
+<div id="intro-view">
 
 	<div id="page-content">
 		
@@ -244,6 +270,8 @@
 	<div class="copyright">&copy 2018 WibesApp Solutions Pvt. Ltd</div>
 
 </div>
+
+
 
 </body>
 </html>

@@ -1,0 +1,167 @@
+body
+	{
+		font-family: 'Roboto', sans-serif;
+	    margin: 0;       
+	    background-color: #f2f2f2;
+	}
+
+	/**
+	{
+    	box-sizing: border-box;
+	}*/
+
+	#intro-view
+	{	
+		width: 100%;
+		top: 0;
+		margin: 0;
+		left: 0;
+		background-image: linear-gradient(#24B7FB,#10DC5F);
+	}
+
+	#header
+	{
+		width: 100%;
+		z-index: 3;
+		display: inline-block;
+		/*flex-direction: row;*/
+		background-color: #654321;
+		/*justify-content: space-around;*/
+	}
+
+	#header > img
+	{
+		width: 40px;
+		height: 40px;
+		
+		float: left;
+	}
+
+	h3
+	{
+		color: #ffffff;
+		font-family: 'raleway', sans-serif;
+		letter-spacing: 1.5px;
+		display: inline-block;
+		padding: 1rem;
+		padding-left: 0;
+		margin: 0;
+	}
+
+	#header > .hamburger
+	{
+        display: inline-block;
+        top:0;
+        margin: 0;
+        /*margin-top: 1.5rem; */
+        padding: 1rem;
+        float: right;        
+    }
+    .hamburger > span
+	{
+	    width: 35px;
+	    height: 3px;
+	    display: block;
+		background-color: white;
+	    /*margin-left: 1rem;*/
+	    margin-bottom: 8px;
+	}
+
+	nav > ul
+	{
+		list-style-type: none;
+		margin: 0;
+		color: #fff;
+		/*border:1px solid yellow;*/
+	}
+
+	#page-content
+	{
+		display: flex;
+		flex-direction: column;
+		/*align-content: center;*/
+	}
+
+	
+
+	#page-content > p
+	{
+		font-family: 'open-sans', sans-serif;
+		font-size: 1.25rem;
+		padding: 1rem;
+		color: #f2f2f2;
+		text-align: center;
+		margin
+	}
+
+	#page-content > #d-button
+	{
+		color: #ffffff;
+		text-align: center;
+		background-color: #1B1B21;
+		font-size: 1.25rem;
+		font-weight: 500;
+		font-family: 'open-sans', sans-serif;
+		border-radius: 0.75rem;
+		padding: 0.5rem 3rem;
+		margin: 2rem auto 3rem;
+		border: 2px solid white;
+		/*width: 70%;*/
+	}
+
+	#family-intro
+	{
+		background-color: #ffffff;
+	}
+
+	#family-intro > h3
+	{
+		font-family: 'raleway', sans-serif;
+		/*font-size: 1.25rem;*/
+		/*font-weight: 700;*/
+		color: #654321;
+		text-align: center;
+		padding: 1rem;
+		margin: 0 1rem;
+	}
+
+	#family-intro > p
+	{
+		font-family: 'open-sans', sans-serif;
+		font-weight: 400;
+		font-size: 1.25rem;
+		color: #654321;
+		text-align: center;
+		padding: 1rem;
+		margin: 1rem;
+	}
+
+	#family-intro > #u-button
+	{
+		color: #654321;
+		text-align: center;
+		background-color: #ffffff;
+		font-size: 1rem;
+		font-weight: 500;
+		font-family: 'open-sans', sans-serif;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+		margin: 2rem;
+		border: 2px solid #654321;
+	}
+
+	#family-sample
+	{
+		display: flex;
+		flex-direction: row;
+	}
+	
+
+.head-d-button
+{
+	background-image: linear-gradient(to right,#10DC5F,#24B7FB);
+	padding:0.5rem;
+	border-radius:6px;
+	display: inline-block;
+	
+}
