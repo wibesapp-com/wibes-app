@@ -139,6 +139,11 @@
 		align-items: flex-start;
 	}
 
+	#u-button
+	{
+		margin-left:1rem;
+	}
+
 	#family-sample
 	{
 		flex-grow:1;

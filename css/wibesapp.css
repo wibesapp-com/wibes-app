@@ -184,13 +184,10 @@
 
 	
 
-	#media
-	{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		margin: 0 1rem;
-	}
+#media
+{
+	justify-content: space-around;
+}
 
 	
 
@@ -199,7 +196,7 @@
 		color: #98989a;
 		text-align:center;
 		font-size:0.75rem;
-		margin-bottom: 1rem;
+		
 	}
 
 }

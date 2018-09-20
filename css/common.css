@@ -5,6 +5,12 @@
 	    background-color: #f2f2f2;
 	}
 
+	a{
+		text-decoration: none;
+
+
+	}
+
 	.border
 	{
 		border:1px solid grey;
@@ -201,6 +207,8 @@
 		border-radius: 0.5rem;
 		padding: 0.5rem 1rem;
 		border: 2px solid #654321;
+		
+		margin: auto;
 		margin-bottom:2rem;	
 	}
 
@@ -369,7 +377,7 @@
 		{
 			display: flex;
 			flex-direction: row;
-			justify-content: space-around;
+			
 		
 			padding-bottom:2rem;
 		}
@@ -404,6 +412,7 @@
 	.footer
 	{
 		background-color: #f2f2f2;
+		
 	}
 
 
@@ -417,3 +426,8 @@
 
 
 }
+
+
+	
+
+	}
