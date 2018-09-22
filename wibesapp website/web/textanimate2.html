@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>texta animte 2</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		function marchu()
+		{	
+			setTimeout(function()
+			{$('span:nth-child(1)').removeClass('initChange').addClass('changeText');},3000);
+			
+			setTimeout(function()
+			{$('span:nth-child(2)').removeClass('initChange').addClass('changeText');},6000);
+			
+			setTimeout(function()
+			{$('span:nth-child(3)').removeClass('initChange').addClass('changeText');},9000);
+			
+			setTimeout(function()
+			{$('span:nth-child(4)').removeClass('initChange').addClass('changeText');},12000);
+		}
+
+	
+			setTimeout(marchu,12000);
+
+		});
+
+</script>
+<style type="text/css">
+
+
+	span{
+		font-size: 5rem;
+		color: red;
+		position: absolute;
+		opacity: 0;
+	}
+	.initChange
+	{	font-size: 5rem;
+		color: red;
+		position: absolute;
+		opacity: 0;
+		
+
+	}
+	.initChange:nth-child(1)
+	{
+		
+		
+		animation: change 3s linear 3s 1 ;
+		
+		
+	}
+	.initChange:nth-child(2)
+	{
+		
+		
+		animation: change 3s linear 6s 1 ;
+		
+		
+	}
+	.initChange:nth-child(3)
+	{
+		
+		
+		animation: change 3s linear 9s 1 ;
+		
+		
+
+	}
+	.initChange:nth-child(4)
+	{
+	
+		
+		
+		animation: change 3s linear 12s 1 ;
+		
+	}
+
+	@keyframes change
+	{
+		0%{opacity: 0;
+			}
+		30%{
+			opacity: 1;
+		 }
+
+		100%{opacity: 0;
+		}
+
+	}
+	
+	.changeText
+	{
+		
+		font-size: 5rem;
+
+		animation: changeme 12s linear 0s infinite ;
+		
+		
+	}
+	
+	@keyframes changeme
+	{
+		0%{opacity: 0;}
+		
+		13%{opacity: 1;}
+		
+		26%{opacity: 0;}
+
+		100%{opacity: 0;}
+	}
+	
+
+</style>
+</head>
+<body>
+	<div class="text">
+		<span class="initChange">this is pavan</span>
+		<span class="initChange">this is raju</span>
+		<span class="initChange">this is ramu</span>
+		<span class="initChange">this is boby</span>
+
+	</div>
+
+</body>
+</html>
