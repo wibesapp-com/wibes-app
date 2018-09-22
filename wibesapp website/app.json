@@ -1,0 +1,6 @@
+{
+  "name": "Start on Heroku: PHP",
+  "description": "edoti le",
+  "repository": "https://git.heroku.com/wibes-web-app.git",
+  "addons": []
+}

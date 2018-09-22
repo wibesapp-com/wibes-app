@@ -163,7 +163,13 @@
 		border-radius: 0.5rem;
 		width: 9rem;
 		height: 6rem;
-		background-color: grey;
+		
+	}
+	.box >img
+	{
+		border-radius: 0.5rem;
+		width: 9rem;
+		height: 6rem;
 	}
 
 	.text

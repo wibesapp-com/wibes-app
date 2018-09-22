@@ -230,12 +230,22 @@
 	
 
 
-	.box
+	
+	.box 
 	{
 		border-radius: 0.5rem;
 		width: 6rem;
 		height: 4rem;
-		background-color: grey;
+		background:url("./images/artists.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	.box >img
+	{
+		border-radius: 0.5rem;
+		width: 6rem;
+		height: 4rem;
 	}
 
 	.text
