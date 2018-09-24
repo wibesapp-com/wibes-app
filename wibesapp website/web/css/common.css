@@ -2,7 +2,7 @@
 	{
 		font-family: 'Roboto', sans-serif;
 	    margin: 0;
-	    max-width: 100%;       
+	    max-width: 100%;
 	    background-color: #f2f2f2;
 	    overflow-x: hidden;
 	}
@@ -95,7 +95,7 @@
 		font-family: 'raleway', sans-serif;
 		/*font-size: 1.25rem;*/
 		font-weight: 700;
-		padding:1rem;		
+		padding:1rem;
 	}
 
 	.changing-content
@@ -106,7 +106,7 @@
 		font-size: 1rem;
 	}
 
-	#wibe-intro > h3 
+	#wibe-intro > h3
 	{
 		font-weight:400;
 	}
@@ -121,7 +121,7 @@
 	    animation: revolve 15s linear infinite;
 	}
 
-	@keyframes revolve 
+	@keyframes revolve
 	{
 
 		0%
@@ -147,7 +147,6 @@
 			opacity: 0;
 			transform: translateY(50px);
 		}
-		
 		100%
 		{
 			opacity: 0;
@@ -207,7 +206,7 @@
 			opacity: 0;
 			transform: translateY(50px);
 		}
-		
+
 		100%
 		{
 			opacity: 0;
@@ -237,7 +236,7 @@
 	}
 .lol
 {
-	
+
 }
 
 	.rotating-text > p:nth-child(5)
@@ -246,18 +245,18 @@
 	}
 
 	/*.initChange
-	{	
-		opacity: 0;	
+	{
+		opacity: 0;
 	}
 
 	.initChange:nth-child(1)
-	{	
-		animation: change 5s linear 0s 1 ;	
+	{
+		animation: change 5s linear 0s 1 ;
 	}
 
 	.initChange:nth-child(2)
-	{	
-		animation: change 5s linear 5s 1 ;	
+	{
+		animation: change 5s linear 5s 1 ;
 	}
 
 	.initChange:nth-child(3)
@@ -266,13 +265,13 @@
 	}
 
 	.initChange:nth-child(4)
-	{	
+	{
 		animation: change 5s linear 15s 1 ;	
 	}
 
 	.initChange:nth-child(5)
-	{	
-		animation: change 5s linear 20s 1 ;	
+	{
+		animation: change 5s linear 20s 1 ;
 	}
 
 	@keyframes change
@@ -291,7 +290,7 @@
 	{
 		animation: looping 25s linear 20s infinite ;
 	}
-	
+
 	@keyframes looping
 	{
 		0%
@@ -299,14 +298,14 @@
 
 		13%
 		{opacity: 1;}
-		 
+
 		26%
 		{opacity: 0;}
 
 		100%
 		{opacity: 0;}
 	}*/
-	
+
 
 
 	#header
