@@ -1,4 +1,5 @@
-<html><head>
+<html>
+<head>
 	<title>WibesApp</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -19,51 +20,51 @@
 
 <div id="header">
 		
-		<img src="./images/wibesapp-logo.png" alt="WibesApp">
-		<h3 class="raleway">WibesApp</h3>
+	<img src="./images/wibesapp-logo.png" alt="WibesApp">
+	<h3 class="raleway">WibesApp</h3>
 
 
-				<div class="hamburger">
-					<span></span>
-					<span></span>
-					<span style="margin-bottom: 0"></span>
-				</div>
-
-				<nav>
-					<ul id="nav-tabs" class="opensans" style="">
-						<li>about us</li>
-						<li>the need</li>
-						<li>inception</li>
-						<li>featured wibes</li>
-						<li> <div class="head-d-button"><a href="./download.html">download</a></div></li>
-					</ul>	
-				</nav>
-
-				<script>
-					$(document).ready(function(){
-
-						$("#featured-wibes").hide();
-						if($(window).width()<732)
-							$("#nav-tabs").hide();
-						else
-							$("#nav-tabs").show();
-						
-					    $(".hamburger").click(function(){
-					        $("#nav-tabs").slideToggle();
-					    });
-
-                        for(var i=1;i<=16;i++)
-							{
-								$(".square-set").append("<div class='square'><img src=\"./images/icon-"+i+".png\"></div> ");
-								if(i<6)
-								$("#media").append("<div><img src=\"./images/sm-"+i+".png\" /></div>");
-							}
-
-
-					});
-				</script>
-
+	<div class="hamburger">
+		<span></span>
+		<span></span>
+		<span style="margin-bottom: 0"></span>
 	</div>
+
+	<nav>
+		<ul id="nav-tabs" class="opensans" style="">
+			<li>about us</li>
+			<li>the need</li>
+			<li>inception</li>
+			<li>featured wibes</li>
+			<li> <div class="head-d-button"><a href="./download.html">download</a></div></li>
+		</ul>	
+	</nav>
+
+</div>
+
+<script>
+	$(document).ready(function(){
+
+		$("#featured-wibes").hide();
+		if($(window).width()<732)
+			$("#nav-tabs").hide();
+		else
+			$("#nav-tabs").show();
+		
+	    $(".hamburger").click(function(){
+	        $("#nav-tabs").slideToggle();
+	    });
+
+        for(var i=1;i<=16;i++)
+			{
+				$(".square-set").append("<div class='square'><img src=\"./images/icon-"+i+".png\"></div> ");
+				if(i<6)
+				$("#media").append("<div><img src=\"./images/sm-"+i+".png\" /></div>");
+			}
+
+
+	});
+</script>
 
 
 
@@ -116,25 +117,24 @@
 
 <div id="family-info" class="article-container-mob">
 	
-	<div class="square-set desk-right">
-		
-	 
+	<div class="square-set desk-right"></div>
 
+	<div id="app-intro" class="desk-left">
+		
+		<h3 id="punch-line" class="article-title no-mar w-txt title-text">
+			Express your experiences, passions, stories, happiness, sadness, wishes, fantasies and what not?
+		</h3>
+
+		<div class="article changing-content w-txt subtitle-text">
+			Stop Assuming and thinking about what others think about you, coz there is no <b>You</b> and <b>Me</b> here! There is only <b>We</b> and <b>Us</b> in <b>WibesApp</b>.
+		</div>
+
+		<div class="article changing-content w-txt subtitle-text">
+			Start Wibing and let WibesApp tell you and show you How, Where and till When? Humans around you are responding to your Wibes.
+		</div>
 
 	</div>
-		<div id="app-intro" class="desk-left">
-			<h3 id="punch-line" class="article-title no-mar w-txt title-text">
-				Express your experiences, passions, stories, happiness, sadness, wishes, fantasies and what not?
-			</h3>
 
-			<div class="article changing-content w-txt subtitle-text">
-				Stop Assuming and thinking about what others think about you, coz there is no <b>You</b> and <b>Me</b> here! There is only <b>We</b> and <b>Us</b> in <b>WibesApp</b>.
-			</div>
-
-			<div class="article changing-content w-txt subtitle-text">
-				Start Wibing and let WibesApp tell you and show you How, Where and till When? Humans around you are responding to your Wibes.
-			</div>
-		</div>
 </div>
 
 
@@ -143,18 +143,29 @@
 
 <div id="wibe-intro" class="article-container-mob">
 	
-
-
 	<div class="desk-left desk-right">
+		
 		<h3 class="article-title br-txt sides-pad title-text" style="font-weight: 300;">
 			Share your Experiences with Humans around you through any type of media. Everything is just a <b>Wibe</b> in our <b>WibesApp</b>.
 		</h3>
 
-		<div class="changing-content br-txt subtitle-text">
-			From Text, Quote, Link, Photo, Instagram, Blogs, Gifs, Audio, Sound cloud, Video, Youtube, to literally everything!! You name it!!!
+		<div class="changing-content br-txt subtitle-text changing-text" style="position: relative; margin-bottom: 4rem;">
+			<p class="positioning">
+				Express and Explore contemporary content with an emotional involvement with the world Around you.
+			</p>
+
+			<p class="positioning">
+				From Text, Quote, Link, Photo, Instagram, Blogs, Gifs, Audio, Sound cloud, Video, Youtube, to literally everything!! You name it!!!
+			</p>
+
+			<p class="positioning">
+				Seriously you can wibe anything here, people who respond to your Wibe shall decide which wibe to exist or don't in our World.
+			</p>
 		</div>
-</div>
-		<img class="no-mar mock-up" src="./images/iphone.png" alt="Make New Connections">
+
+	</div>
+		
+	<img class="no-mar mock-up" src="./images/iphone.png" alt="Make New Connections">
 	
 </div>
 
@@ -163,17 +174,37 @@
 
 
 <div id="in-touch-page" class="article-container-mob w-txt " >
+	
 	<div class="desk-right desk-left">
-	<img src="./images/in-touch icon.png" alt="Make New Connections">
+		
+		<img src="./images/in-touch icon.png" alt="Make New Connections">
 
-	<div id="intouch-text " class="changing-text sides-pad subtitle-text">
-		They don't know who all are in-touch with them, they just know how many are in touch with them, same goes to you.
-	</div>
+		<div class="changing-content sides-pad subtitle-text rotating-text" style="margin-bottom: 4rem; position: relative;">
+			<p class="positioning desk-positioning">
+				Reach out to the people who are in tune with your own nature.
+			</p>
 
+			<p class="positioning desk-positioning">
+				They don't know who all are in-touch with them, they just know how many are in touch with them, same goes to you.
+			</p>
 
-	<h3 id="keep-in-touch" class="article-title sides-pad title-text">
-		Keep <b>in-touch</b> with the Humans whom you adore, whose wibes you want to keep listening to even when you are not around them.
-	</h3>
+			<p class="positioning desk-positioning">
+				Everyone is just a stranger until you start Wibing!
+			</p>
+
+			<p class="positioning desk-positioning">
+				Invite your friends and make new ones here!
+			</p>
+
+			<p class="positioning desk-positioning">
+				Enjoy the freedom of keeping in-touch or not keeping in-touch with anyone at your will. 
+			</p>
+		</div>
+
+		<h3 id="keep-in-touch" class="article-title sides-pad title-text">
+			Keep <b>in-touch</b> with the Humans whom you adore, whose wibes you want to keep listening to even when you are not around them.
+		</h3>
+
 	</div>
 	
 </div>
@@ -182,20 +213,80 @@
 					<!-- Gaming Page -->
 
 
-<div id="gaming-page" class="article-container-mob br-txt desk-left desk-right">
+<div id="gaming-page" class="article-container-mob br-txt">
 	<div>
+
 		<h3 id="experi-fun" class="article-title title-text">
 			Experience the <b>fun</b> of gaming in a <b>Response Able</b> network
 		</h3>
 
-		<div id="gaming-text" class="changing-content subtitle-text">
-			Every wibe has its own life-time that changes with the responses people give.You can <b>memorize</b>, <b>forget</b> or even <b>ignore</b> any wibe around them. 
+		<div class="changing-content subtitle-text rotating-text" style="margin-bottom: 4rem; position: relative;">
+			<p class="positioning">
+				Everyone can Respond to any wibe around them with three universal Response Abilities.
+			</p>
+
+			<p class="positioning">
+				Every wibe has its own life-time that changes with the responses people give.You can <b><i>memorize</i></b>, <b><i>forget</i></b> or even <b><i>ignore</i></b> any wibe around them.
+			</p>
+
+			<p class="positioning">
+				Every response counts! and all responses together by everyone will decide the life-time of the Wibe in our world.
+			</p>
+
+			<p class="positioning">
+				When your wibes come to <b><i>harvest</i></b>, you earn coins and does the people whose response is in majority.
+			</p>
+
+			<p class="positioning">
+				Wibe your experiences, build reputation and be a <b>Wibe Celebrity</b>.
+			</p> 
 		</div>
+
 	</div>
 
 	<img class="mock-up" src="./images/iphone.png" alt="Make New Connections">
 
 </div>
+
+<!-- <script type="text/javascript">
+
+	$(document).ready(function(){
+
+		function contentChanger()
+		{
+			setTimeout(function()
+			{
+				$('p:nth-child(1)').removeClass('initChange').addClass('changeText');
+			},0);
+			
+			setTimeout(function()
+			{
+				$('p:nth-child(2)').removeClass('initChange').addClass('changeText');
+			
+			},5000);
+			
+			setTimeout(function()
+			{
+				$('p:nth-child(3)').removeClass('initChange').addClass('changeText');
+			},10000);
+			
+			setTimeout(function()
+			{
+				$('p:nth-child(4)').removeClass('initChange').addClass('changeText');
+			},15000);
+
+			setTimeout(function()
+			{
+				$('p:nth-child(5)').removeClass('initChange').addClass('changeText');
+			},20000);
+		}
+
+			
+			setTimeout(contentChanger,5000);
+	
+		});
+
+</script> -->
 
 
 					<!-- WibesApp Features Page -->
@@ -274,8 +365,5 @@
 
 
 
-
-
-
-
-</body></html>
+</body>
+</html>
