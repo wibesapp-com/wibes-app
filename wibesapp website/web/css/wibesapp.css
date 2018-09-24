@@ -63,6 +63,7 @@
 		width: 6rem;
 		height: 4rem;
 	}
+
 	.box >img
 	{
 		border-radius: 0.5rem;
@@ -75,30 +76,22 @@
 		font-size: 0.75rem;
 	}
 
-
 	#family-info
 	{
 		flex-direction: column;
 	}
 
-
 	#app-intro
-	{
-		
+	{	
 		width:100%;
 		text-align: center;
 		padding-right: 0rem;
 	}
 
-
-
 	.square-set
 	{
-		
-
 		width:100%;
 	}
-
 
 	.square-set > .square
 	{
@@ -106,26 +99,23 @@
 		height:20vw;
 	}
 
-
-	
-
 	.square > img
 	{
 		width:3rem;
 		height:3rem;
 	}
 
-
-
-	
+	.positioning
+	{
+		left: 1rem;
+	    right: 1rem;
+	}
 
 	#gaming-page > img
 	{
 		margin: auto;
 		width: 100%;
 	}
-
-	
 
 	#features-page > h3
 	{
@@ -134,19 +124,15 @@
 		font-family: 'raleway', sans-serif;
 		color: #ffffff;
 		text-align: center;
-	
-		/*margin: auto;
-	}*/}
-
-	
+		/*margin: auto;*/
+	}
 
 	#featured-wibes
 	{
 		background-color: #f2f2f2;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		
+		justify-content: center;	
 	}
 
 	#featured-wibes > h3
@@ -186,23 +172,16 @@
 		box-shadow: 0 4px 16px rgba(0,0,0,0.16);
 	}
 
-	
-
-	
-
-#media
-{
-	justify-content: space-around;
-}
-
-	
+	#media
+	{
+		justify-content: space-around;
+	}
 
 	.copyright
 	{
 		color: #98989a;
 		text-align:center;
-		font-size:0.75rem;
-		
+		font-size:0.75rem;	
 	}
 
 }
