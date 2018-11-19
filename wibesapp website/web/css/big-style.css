@@ -11,11 +11,6 @@
 		font-size:1.5rem;
 	}
 
-	/*.desk-left
-	{
-		margin-left: 1rem;	
-	}	*/
-
 	.button-dark
 	{
 		margin-left:7rem;
@@ -23,13 +18,7 @@
 
 	.article-container-mob
 	{
-		/*display: flex;*/
-		/*flex-direction: column;*/
-		/*width:100%;*/
-		/*margin:0;*/
-		/*text-align: center;*/
 		align-items: flex-start;
-		/*padding:1.5rem 0;*/
 	}
 
 	.article-title
@@ -75,14 +64,12 @@
 	#tagline
 	{
 		font-size: 2rem;
-		padding-bottom: 2rem;
-		
+		padding-bottom: 2rem;	
 	}
 
 	.button-dark
 	{
 		font-size: 1.75rem;
-
 	}
 
 	.head-d-button
@@ -106,11 +93,8 @@
 
 	nav > ul > li:nth-child(5)
 	{
-		padding:0.5rem 1.5rem;
-		
+		padding:0.5rem 1.5rem;	
 	}
-
-
 
 	#family-intro
 	{
@@ -289,18 +273,23 @@
 
 	#get-app
 	{
-		background-color: #fff;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
 
+	.join-uu
+	{
+		font-size: 1.25rem;
+		line-height: 1.5rem;
+	}
+
 	#links
 	{
 		justify-content: center;
-
 	}
+
 	#links div
 	{
 		margin:0 3rem;
