@@ -1,0 +1,63 @@
+body
+{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.poppins
+{
+    font-family: 'poppins', sans-serif;
+}
+
+.raleway
+{
+    font-family: 'raleway', sans-serif;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.why-page
+{
+    background-color: #F2F2F2;
+}
+
+.page-heading
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    color: #654321;
+}
+
+.info-container
+{
+    padding: 1rem;
+}
+
+.info
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7c7c7c;
+    text-align: center;
+}
+
+.info > i
+{
+    font-size: 0.75rem;
+}

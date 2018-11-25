@@ -1,0 +1,103 @@
+body
+{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.poppins
+{
+    font-family: 'poppins', sans-serif;
+}
+
+.raleway
+{
+    font-family: 'raleway', sans-serif;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.platforms-page
+{
+    background-color: #F2F2F2;
+}
+
+.page-heading
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    color: #15A76A;
+}
+
+.platform-name
+{
+    color: #19B5FE;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* .cards-container
+{
+    width: 100vw;
+}
+
+.service-cards
+{
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+} */
+
+.card-structure
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #777777;
+    border-radius: 10px;
+    width: 85vw;
+    margin: 1rem 1rem;
+    flex-shrink: 0;
+  
+}
+.thumbnail-container
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 1rem;
+    background-color: #D7D7D7;
+}
+
+.title-container
+{
+    padding: 1rem;
+}
+
+.details-container
+{
+    padding: 1rem;
+}
+
+.details
+{
+    font-size: 1.25rem;
+    color: #7C7C7C;
+    text-align: center;
+}

@@ -1,0 +1,112 @@
+body
+{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.poppins
+{
+    font-family: 'poppins', sans-serif;
+}
+
+.raleway
+{
+    font-family: 'raleway', sans-serif;
+}
+.landing-page
+{
+    
+    background-image: linear-gradient(150deg, #19B5FE, #26C281);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-container
+{
+    padding: 1rem;
+}
+
+.name-container
+{
+    padding: 1rem 1rem 0.5rem;
+    width: 80vw;
+}
+
+.company-name
+{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: right;
+}
+
+.tag-container
+{
+    padding: 0 1rem 1rem;
+    width: 80vw;
+}
+
+.tag-line
+{
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-align: right;
+    color: #ffffff;
+}
+.engi-container
+{
+    padding: 1rem;
+}
+
+.engi-container > div
+{
+    margin-bottom: 0.5rem;
+}
+
+.engineering
+{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.engi-spani
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.noun
+{
+    font-size: 1rem;
+    /* font-weight: italic; */
+    color: #ffffff;
+}
+
+.meaning
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #ffffff;
+}
